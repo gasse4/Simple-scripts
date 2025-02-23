@@ -40,5 +40,4 @@ while amount_saved < portion_down_payment:
     months += 1
     if months % 6 == 0:
         monthly_salary += monthly_salary * semi_annual_raise
-
 print(f"It will take {months} months to save for the down payment.")

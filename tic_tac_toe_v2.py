@@ -5,6 +5,7 @@ player2_input = "O"
 
 board = [[" " for _ in range(3)] for _ in range(3)]
 
+
 def print_board():
     print(colored("\n  0 1 2", "cyan"))
     for i in range(3):
@@ -22,6 +23,7 @@ def print_board():
         if i < 2:
             print("  -+-+-")
     print()
+
 
 def check_logic():
     # Check rows
@@ -45,6 +47,7 @@ def check_logic():
         return "It's a Tie!"
 
     return None
+
 
 def start_game():
     """Starts and runs the Tic Tac Toe game."""
@@ -91,5 +94,6 @@ def start_game():
             player2_input if current_player == player1_input else player1_input
         )
         player_num = 2 if player_num == 1 else 1
+
 
 start_game()

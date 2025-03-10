@@ -2,7 +2,7 @@ def get_positive_float(prompt):
     while True:
         try:
             value = float(input(prompt))
-            if value <= 0:
+            if value <= 0 :
                 print("Please enter a positive number.")
             else:
                 return value
@@ -20,12 +20,11 @@ def get_portion_saved(prompt):
                 return value
         except ValueError:
             print("Invalid input. Please enter a number.")
-
-
-yearly_salary = int(get_positive_float("Enter your yearly salary: "))
-portion_saved = float(get_portion_saved("Enter the portion of salary: "))
-cost_of_dream_house = float(get_positive_float("Enter the cost of your dream house: "))
-semi_annual_raise = float(get_portion_saved("Enter the semi annual raise: "))
+            
+yearly_salary = int( get_positive_float("Enter your yearly salary: "))
+portion_saved = float( get_portion_saved("Enter the portion of salary: "))
+cost_of_dream_house = float( get_positive_float("Enter the cost of your dream house: "))
+semi_annual_raise = float( get_portion_saved("Enter the semi annual raise: "))
 
 portion_down_payment = 0.25 * cost_of_dream_house
 monthly_salary = yearly_salary / 12
@@ -40,5 +39,5 @@ while amount_saved < portion_down_payment:
     months += 1
     if months % 6 == 0:
         monthly_salary += monthly_salary * semi_annual_raise
+
 print(f"It will take {months} months to save for the down payment.")
-# يعني اي يعني 

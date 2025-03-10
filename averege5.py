@@ -1,6 +1,11 @@
 from termcolor import colored
 import pyfiglet
 
+
+
+
+
+
 def validation(subject):
     min,max=0,100
     while True:
